@@ -11,8 +11,6 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<RegisterPage />} />
-				<Route path="/register" element={<RegisterPage />} />
-				<Route path="/home" element={<RegisterPage />} />
 				<Route path="/genres" element={<GenrePage />} />
 				<Route path="/carousel" element={<CarouselPage />} />
 				<Route path="/dashboard" element={<DashboardPage />} />
