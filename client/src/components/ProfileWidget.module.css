@@ -20,22 +20,35 @@
     /* gap:10px; */
 }
 .name{
+    height: calc((1/4)*100);
     font-size: 1.5em;
 
 }
 .email{
+    height: calc((1/4)*100);
+
     font-size: 1.5em;
 }
 .username{
+    height: 50%;
     font-size: 2rem;
     font-weight: bold;
 }
-
 .genres {
     display: flex;
     flex-wrap: wrap;
+    height: 50%;
+    width: 100%;
+    padding: 15px;
+    gap: 10px;
+    
 }
 .genre{
+    height: 50%;
+    /* padding: 15px; */
+    border-radius: 30px;
     background-color: #9F94FF;
-    width: 50%;
+    width: 40%;
+    /* width:calc(100%/2) ; */
+    /* height: auto; */
 }
