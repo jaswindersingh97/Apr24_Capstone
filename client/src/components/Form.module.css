@@ -2,12 +2,25 @@
     height: 100%;
     width: 100%;
     display: flex;
-    padding: 20px;
+    padding-inline: 10%;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
-
+.container input{
+    color:#7C7C7C;
+    background: #292929;
+    /* height: 60px; */
+    padding: 15px;
+    border: none;
+}
 .error {
     color: red;
     font-size: 0.8rem;
+}
+.submit{
+    position:relative;
+    background-color: #72DB73;
+    color: white;
+    border: none;
+    padding: 15px;
 }
