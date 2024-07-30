@@ -15,6 +15,9 @@ dist-ssr
 .env
 
 .vscode
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/settings.json
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
