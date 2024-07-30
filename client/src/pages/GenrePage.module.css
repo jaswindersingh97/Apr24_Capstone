@@ -68,6 +68,7 @@
     height: 100%;
     padding: 5%;
     gap: 5%;
+    align-items: end;
 }
 
 .genres {
@@ -103,6 +104,10 @@
     border: 2px,solid,white;
 }
 .nextButton{
-    background-color: #148A08;
-    width: 30%;
+    padding: .625rem;
+    width: 200px;
+    border-radius: 38.86px;
+    border: none;
+    background: #148A08;
+    color: white;
 }

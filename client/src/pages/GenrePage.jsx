@@ -75,7 +75,7 @@ function GenrePage() {
 						</div>
 					))}
 				</div>
-				<button onClick={handleNext}>Next</button>
+				<button className={styles.nextButton} onClick={handleNext}>Next Page</button>
 			</div>
 		</div>
 	);
