@@ -5,6 +5,7 @@ import WeatherWidget from "../components/WeatherWidget";
 import ProfileWidget from "../components/ProfileWidget";
 import NewsWidget from "../components/NewsWidget";
 import Notes from "../components/Notes";
+// import CircularTimer from "../components/CircularTimer";
 function DashboardPage() {
 	return (
 		<div className={styles.container}>
