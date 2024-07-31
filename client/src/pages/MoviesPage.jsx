@@ -3,7 +3,7 @@ import styles from './MoviesPage.module.css'
 import avatar from './../assets/avtar2.png'
 import { useContext } from 'react'
 import { AppContext } from '../context/AppContext'
-import fetchMovies from '../api/fetchMovies'
+import MoviesList from '../components/MoviesList'
 
 function MoviesPage() {
   const {selectedGenres}=useContext(AppContext)
@@ -21,6 +21,7 @@ function MoviesPage() {
             {selectedGenres?.slice(0, 4)?.map((genre, index) => (
 			    <div key={index} className={styles.genre}>
 				    <p>{genre}</p>
+            <MoviesList genre={genre}/>
           </div>
 					))}
 				</div>
