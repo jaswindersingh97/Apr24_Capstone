@@ -8,7 +8,6 @@ function NewsWidget() {
 	useEffect(() => {
 		fetchNews().then((data) => {
 			if (data.status == "ok") {
-				const randomIndex = Math.floor(Math.random() * data.articles.length);
 				setNews(data.articles[randomIndex]);
 				// generating a number between 0 and L-1
 			}
@@ -20,7 +19,7 @@ function NewsWidget() {
 		return `${date} | ${time}`;
 	};
 
-	console.log(news);
+	// console.log(news);
 
 	return (
 		<div className={styles.container}>
