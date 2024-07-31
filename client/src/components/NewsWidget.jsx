@@ -8,6 +8,7 @@ function NewsWidget() {
 	useEffect(() => {
 		fetchNews().then((data) => {
 			if (data.status == "ok") {
+				const randomIndex = Math.floor(Math.random() * data.totalResults);
 				setNews(data.articles[randomIndex]);
 				// generating a number between 0 and L-1
 			}
