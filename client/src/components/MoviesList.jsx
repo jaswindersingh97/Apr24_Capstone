@@ -18,7 +18,7 @@ function MoviesList(genre) {
 <div className={styles.container}>
       {movies ? (
         <div className={styles.movies}>
-          {movies.map((movie, index) => (
+          {movies.slice(0,10).map((movie, index) => (
             <div key={index} className={styles.movie}>
               <img className={styles.movieImage} src={movie.image} alt={movie.title} />
               {/* Uncomment below if you want to display title and description */}

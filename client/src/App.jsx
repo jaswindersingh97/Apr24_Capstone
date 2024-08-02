@@ -7,7 +7,7 @@ import GenrePage from "./pages/GenrePage";
 import CarouselPage from "./pages/CarouselPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import DashboardPage from "./pages/DashboardPage";
-import MoviePage from "./pages/MoviePage";
+import MoviesPage from "./pages/MoviesPage";
 
 const ProtectedRoute = ({ children }) => {
 	const { user, selectedGenres } = useContext(AppContext);
@@ -57,7 +57,7 @@ function App() {
 					path="/movies"
 					element={
 						<ProtectedRoute>
-							<MoviePage />
+							<MoviesPage />
 						</ProtectedRoute>
 					}
 				/>
