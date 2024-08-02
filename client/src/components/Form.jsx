@@ -49,7 +49,7 @@ function Form({
 			{error?.phone && (
 				<p className={styles.error}>Valid phone no. is required</p>
 			)}
-			<button onClick={submitHandler}>SIGNUP</button>
+			<button className={styles.submit} onClick={submitHandler}>SIGNUP</button>
 		</div>
 	);
 }

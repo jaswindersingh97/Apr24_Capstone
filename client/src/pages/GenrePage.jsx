@@ -2,7 +2,8 @@ import { useContext, useState, useEffect } from "react";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
 import styles from "./GenrePage.module.css";
-import { defaultGenres } from "../data/genres";
+import defaultGenres from "../data/genres";
+import defaultGenres2 from "../data/genres2";
 
 function GenrePage() {
 	const [error, setError] = useState();
@@ -38,7 +39,7 @@ function GenrePage() {
 	return (
 		<div className={styles.container}>
 			<div className={styles.left}>
-				<h3 className={styles.heading}>Super App</h3>
+				<h3 className={styles.heading}>Super app</h3>
 				<h2 className={styles.subHeading}>
 					Choose your entertainment category
 				</h2>
@@ -50,6 +51,7 @@ function GenrePage() {
 							className={styles.selectedGenre}
 						>
 							{genre}
+							<span>X</span>
 						</div>
 					))}
 				</div>
@@ -57,20 +59,23 @@ function GenrePage() {
 			</div>
 			<div className={styles.right}>
 				<div className={styles.genres}>
-					{defaultGenres.map((genre, index) => (
+					{defaultGenres2.map((genre, index) => (
 						<div
 							key={index}
 							className={styles.genre}
+							style={{ backgroundColor:genre.bgcolor}}
 							onClick={() => {
-								handleSelectGenre(genre);
+								handleSelectGenre(genre.name);
 							}}
 						>
-							{genre}
+							<div className={styles.genreTitle}>{genre.name}</div>
+							<div className={styles.image}>
+								<img src={genre.src}/>
+							</div>
 						</div>
 					))}
 				</div>
-
-				<button onClick={handleNext}>Next</button>
+				<button className={styles.nextButton} onClick={handleNext}>Next Page</button>
 			</div>
 		</div>
 	);

@@ -10,7 +10,14 @@
     display: flex;
     flex-direction: column;
     background: url("../assets/bg.png");
+    justify-content:end;
+}
 
+.label{
+    padding: 10%;
+    font-size: 55px;
+    font-weight: 900;
+    text-align:left;
 }
 
 .right {
@@ -21,6 +28,17 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 20px;
+
+}
+.header{
+    text-align: center;
+
+}
+.heading{
+    font-family: Single Day;
+    font-size: 67px;
+    text-align: center;
+    color: #72DB73;
 }
 
 .footer span {

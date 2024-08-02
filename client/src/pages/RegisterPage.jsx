@@ -29,7 +29,7 @@ export default function RegisterPage() {
 	return (
 		<div className={styles.container}>
 			<div className={styles.left}>
-				<div className={styles.background}></div>
+				{/* <div className={styles.background}></div> */}
 				<div className={styles.label}>Discover new things on Superapp</div>
 			</div>
 			<div className={styles.right}>

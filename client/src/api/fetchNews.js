@@ -11,6 +11,7 @@ const fetchNews = async () => {
                 sources: "techcrunch"
             },
         });
+        // console.log(data)
         return data;
     } catch (error) {
         console.error(error);

@@ -1,0 +1,16 @@
+.container{
+    box-sizing: content-box;
+    width: 100%;
+    height: 200px;
+    overflow-y: hidden;
+    /* row-gap: 20px; */
+}
+.movies{
+    display: flex;
+    gap:30px;
+}
+.movies img{
+    height:150px;
+    /* width: 200px; */
+    /* object-fit: cover; */
+}
