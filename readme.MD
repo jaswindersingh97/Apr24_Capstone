@@ -27,4 +27,4 @@ npm install
 npm run dev
 ```
 
-<p>5. Get API keys from news</p>
+<p>5. Get API keys from news and other apis</p>
